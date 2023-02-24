@@ -16,4 +16,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
  - SpringBoot
  - MySQL
 
-<img src="FotosHome/" alt="home_page">
+## Pagina Home
+<img src="FotoHomePage/HomePage.png" alt="home_page">
