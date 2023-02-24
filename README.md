@@ -1,6 +1,6 @@
 # AnimeFree
 
-Este e um projeto pessoal que desenvolvi um sistema de login em um site fictício de Animes,
+Este e um projeto pessoal que desenvolvi de um sistema de login em um site fictício de Animes,
 onde criei uma API Rest com Java + SprinBoot Framework é conectei ao meu MySQL criando um banco de dados local.
 
 ## Development server
