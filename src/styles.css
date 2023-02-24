@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+input{
+    border: none;
+    outline: 0;
+}
+
+#logo{
+    font-size: 55px;
+    color: #fff
+}
+#logo span{
+    color: #000;
+}   
+#btn_submit{
+    width: 220px;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    color: #63FDD8;
+    margin: 50px auto;
+    font-size: 19px;
+    font-weight: bolder;
+    box-shadow: 1px 1px 20px 5px #069696;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+}
+label{
+    font-weight: bolder;
+    margin: 0px 0px 6px 10px;
+}
+#btn_submit:disabled{
+    box-shadow: none;
+    opacity: 50%;
+    cursor: default;
+}
+a{
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+}
+a:hover{
+    color: #fff;
+}

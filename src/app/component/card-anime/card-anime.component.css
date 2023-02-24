@@ -1,0 +1,51 @@
+#card{
+    display: flex;
+    position: relative;
+    margin: 20px 0px 0px 0px;;
+    width: 300px;
+    height: 380px;
+    border-radius: 10px;
+    background-color: #ddd;
+    overflow: hidden;
+    align-items: flex-end;
+    cursor: pointer;
+}
+#card img{
+    width: 100%; 
+    height: 100%;
+}
+/* .card[formdata]:hover::after{ */
+#card:hover::after{
+    content: attr(title);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 199, 171, 0.7);
+    font-size: 19px;
+    width: 100%;
+    height: 100%;
+    animation: animation-card 1s ease-out; 
+    color: #fff;
+    font-weight: bolder;
+}
+
+/* .background-card{
+    display: none;
+    position: absolute;
+    background-color: rgba(79, 199, 171, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.background-card:target{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+} */
+
+@keyframes animation-card {
+    0% {height: 0px;}
+    100% {height: 100%;}
+}

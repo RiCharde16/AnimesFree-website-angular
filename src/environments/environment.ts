@@ -3,8 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUsuario: "http://localhost:8080/api/usuario"
 };
+
+export const dadosUsuario = {
+  nome: '',
+  
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

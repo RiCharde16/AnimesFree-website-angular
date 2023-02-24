@@ -1,0 +1,35 @@
+<section>
+    <div class="container">
+        <h1 id="logo">Animes<span>Free</span></h1>
+        <form [formGroup]="formulario" class="container-form">
+            <h2>Cadastre-se</h2>
+            <div class="group">
+                <label for="user">Usuario:</label>
+                <input type="text" formControlName="user" placeholder="johnDoe">
+            </div>
+        
+            <div class="group">
+                <label for="email">Email</label>
+                <input type="email" formControlName="email" placeholder="johDow@gmail.com">
+            </div>
+            <div class="group">
+                <label for="senha">Senha</label>
+                <input type="password" formControlName="senha" placeholder="********">
+            </div>
+            <a routerLink="login">ja possui login?</a>
+            <button [disabled]="!formulario.valid" id="btn_submit" (click)="cadastrarUsuario()">Cadastrar</button>
+            <!-- <input type="submit" formaction="> -->
+        </form>
+    </div>
+    <div>
+        <app-card *ngIf="formularioEnviado"
+        [mensage]="message"
+        [Icon]="dirIcon"></app-card>
+        <!-- <app-card></app-card> -->
+    </div>
+    <div id="background">
+        <video autoplay poster="" [volume]="0" poster="https://ovicio.com.br/wp-content/uploads/2022/12/20221231-one-piece-red-730x365.webp">
+            <source src="assets/Arquivos/OnePiece_Opening23.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>

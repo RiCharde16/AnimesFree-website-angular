@@ -1,0 +1,29 @@
+<main>
+    <div class="sub-container">
+        <h1 id="logo">Animes<span>Free</span></h1>
+        <h3>Entre com sua conta é assista a varios animes</h3>
+        <form [formGroup]="formulario" id="formulario-container">
+            <div class="group">
+                <label for="usuario">Usuario</label>
+                <input type="text" formControlName="usuario" name="usuario">
+            </div>
+            <div class="group">
+                <label for="senha">Senha</label>
+                <input type="password" formControlName="senha" name="senh">
+            </div>
+            <div class="link">
+                <a routerLink="">Não tem uma conta? Cadastre-se agora</a>
+            </div>
+            <button [disabled]="!formulario.valid" id="btn_submit" (click)="logarUsuario()">Logar</button>
+        </form>
+        <app-card *ngIf="!loginBloqueado"
+            [mensage]="mensagem"
+            [Icon]="iconeDir"
+        ></app-card>
+    </div>
+    <div id="background">
+        <video [autoplay]="true" [volume]="0" poster="https://www.justwatch.com/images/backdrop/257130664/s640/temporada-1">
+            <source src="assets/Arquivos/Jojos_Opening_1.mp4" type="video/mp4"><source>
+        </video>
+    </div>  
+</main>
